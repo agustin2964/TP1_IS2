@@ -10,6 +10,6 @@
 * tres
 * items 
 
-![sabelo](../TP1_IS2/src/image.png)
+![sabelo](/src/image.png)
 
-([minecraft sin virus](https://music.youtube.com/watch?v=ffdcT_cEhLo))
+[minecraft sin virus](https://music.youtube.com/watch?v=ffdcT_cEhLo)
