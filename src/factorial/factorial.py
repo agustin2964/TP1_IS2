@@ -1,4 +1,3 @@
-#!/usr/bin/python
 #*-------------------------------------------------------------------------*
 #* factorial.py                                                            *
 #* calcula el factorial de un número                                       *
@@ -19,5 +18,37 @@ def factorial(num):
             num -= 1
         return fact 
 
-num=int(input())
-print("Factorial ",num,"! es ", factorial(num)) 
+#se ingresan los limites inferior y superior para calcular los factoriales
+print("Ingrese el numero menor para calcular su factorial: ")
+while True:
+    try:
+        num1=input()
+        if num1=="":
+            num1=1
+            break
+        else: 
+            num1=int(num1)
+
+            if num1>=0:
+                break
+            else:
+                print("Ingrese un numero no negativo: ")
+    except Exception as e:
+        print("Error:", e)
+        print("Ingrese un numero no negativo: ")
+    
+print("Ingrese el numero mayor para calcular su factorial: ")
+while True:
+    try:
+        num2=input()   
+        if num2=="":
+            num2=60
+            break
+        else:
+            num2=int(num2)
+            if num2>=num1:
+                break
+    except:
+        print("Ingrese un numero mayor o igual al anterior: ")
+for i in range(num1,num2+1):
+    print("Factorial ",i,"! es ", factorial(i))
